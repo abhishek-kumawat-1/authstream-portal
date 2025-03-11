@@ -18,8 +18,8 @@ export default function Login() {
           </h1>
           <p className="text-muted-foreground animate-fade-in" style={{ animationDelay: '100ms' }}>
             {mode === 'login' 
-              ? 'Sign in to access your Streamlit applications' 
-              : 'Sign up to get started with StreamConnect'}
+              ? 'Sign in to access your one stop solution for Ad Copies' 
+              : 'Sign up to get started with high CTR Ad Campaigns'}
           </p>
         </div>
         

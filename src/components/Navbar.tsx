@@ -42,7 +42,7 @@ export default function Navbar() {
           to="/" 
           className="text-xl font-medium tracking-tight hover:opacity-80 transition-opacity"
         >
-          StreamConnect
+          AK Smart Solutions
         </Link>
         
         {/* Desktop navigation */}
@@ -84,6 +84,12 @@ export default function Navbar() {
               className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
             >
               Sign In
+            </Link>
+            <Link 
+              to="https://www.linkedin.com/in/abhishek-kumawat-iitd/" 
+              className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+            >
+              Contact Us
             </Link>
           )}
         </div>

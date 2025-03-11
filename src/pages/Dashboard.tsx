@@ -28,6 +28,10 @@ export default function Dashboard() {
     return () => clearTimeout(timer);
   }, [navigate]);
 
+  const handleOpenInNewTab = () => {
+    window.open(streamlitUrl, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -56,10 +60,19 @@ export default function Dashboard() {
                 <div className="p-4 border-b bg-muted/30">
                   <div className="flex items-center justify-between">
                     <h2 className="text-lg font-medium">Streamlit Application</h2>
-                    <div className="flex space-x-2">
-                      <span className="inline-flex h-2.5 w-2.5 rounded-full bg-red-500"></span>
-                      <span className="inline-flex h-2.5 w-2.5 rounded-full bg-yellow-500"></span>
-                      <span className="inline-flex h-2.5 w-2.5 rounded-full bg-green-500"></span>
+                    <div className="flex items-center space-x-4">
+                      <button 
+                        onClick={handleOpenInNewTab}
+                        className="text-sm text-primary hover:underline flex items-center"
+                      >
+                        <span className="mr-1">Open in new tab</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                      </button>
+                      <div className="flex space-x-2">
+                        <span className="inline-flex h-2.5 w-2.5 rounded-full bg-red-500"></span>
+                        <span className="inline-flex h-2.5 w-2.5 rounded-full bg-yellow-500"></span>
+                        <span className="inline-flex h-2.5 w-2.5 rounded-full bg-green-500"></span>
+                      </div>
                     </div>
                   </div>
                 </div>

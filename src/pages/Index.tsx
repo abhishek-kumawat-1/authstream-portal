@@ -110,7 +110,7 @@ export default function Index() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6 animate-on-scroll">Ready to get started?</h2>
           <p className="text-lg text-muted-foreground mb-10 animate-on-scroll">
-            Join us today and increase your CTR by 50% within few seconds.
+            Join us today and increase your campaigns CTR by 50% within few seconds.
           </p>
           <Link to="/login" className="animate-on-scroll">
             <Button size="lg">

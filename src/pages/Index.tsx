@@ -135,7 +135,7 @@ export default function Index() {
             <a href="#" className="text-sm text-muted-foreground hover:text-foreground">
               Terms of Service
             </a>
-            <a href="https://www.linkedin.com/posts/abhishek-kumawat-iitd_newbeginnings-businessanalyst-oyo-activity-7210148943463088128-P8QI?utm_source=share&utm_medium=member_desktop&rcm=ACoAADLo9X8BNwmv-iqRgvIS6qcfpW-bMsYWdMk" className="text-sm text-muted-foreground hover:text-foreground">
+            <a href="#" className="text-sm text-muted-foreground hover:text-foreground">
               Contact
             </a>
           </div>

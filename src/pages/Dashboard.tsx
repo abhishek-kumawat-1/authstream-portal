@@ -15,7 +15,7 @@ export default function Dashboard() {
     const isAuthenticated = localStorage.getItem('isAuthenticated') === 'true';
     
     if (!isAuthenticated) {
-      toast.error('Please sign in to access the dashboard');
+      toast.error('Please sign in to access the ad copies generator');
       navigate('/login');
       return;
     }
@@ -40,9 +40,9 @@ export default function Dashboard() {
         <div className="max-w-7xl mx-auto">
           {/* Dashboard header */}
           <div className="mb-8 animate-fade-in">
-            <h1 className="text-3xl font-bold mb-2">Dashboard</h1>
+            <h1 className="text-3xl font-bold mb-2">Ad Copies Generator</h1>
             <p className="text-muted-foreground">
-              Your Streamlit application is securely embedded below
+              Generate your ad copies now tailored to your nrand needs.
             </p>
           </div>
           
@@ -50,7 +50,7 @@ export default function Dashboard() {
             <div className="rounded-lg border bg-card shadow-sm p-8 flex items-center justify-center animate-pulse h-[600px]">
               <div className="flex flex-col items-center">
                 <div className="h-10 w-10 rounded-full border-t-2 border-primary animate-spin"></div>
-                <p className="mt-4 text-sm text-muted-foreground">Loading your dashboard...</p>
+                <p className="mt-4 text-sm text-muted-foreground">Loading...</p>
               </div>
             </div>
           ) : (
@@ -59,7 +59,7 @@ export default function Dashboard() {
               <div className="rounded-lg border bg-card shadow-sm overflow-hidden">
                 <div className="p-4 border-b bg-muted/30">
                   <div className="flex items-center justify-between">
-                    <h2 className="text-lg font-medium">Streamlit Application</h2>
+                    <h2 className="text-lg font-medium">Ad Copies Application</h2>
                     <div className="flex items-center space-x-4">
                       <button 
                         onClick={handleOpenInNewTab}

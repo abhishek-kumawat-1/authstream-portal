@@ -7,7 +7,7 @@ import StreamlitEmbed from '@/components/StreamlitEmbed';
 
 export default function Dashboard() {
   const [loading, setLoading] = useState(true);
-  const [streamlitUrl, setStreamlitUrl] = useState('https://ad-copies-generator-abhishek-kumawat.streamlit.app/');
+  const [streamlitUrl, setStreamlitUrl] = useState('https://ad-copies-generator-abhishek-kumawat.streamlit.app?embed=true');
   const navigate = useNavigate();
 
   useEffect(() => {
